@@ -11,9 +11,17 @@
     <title>Index</title>
 </head>
 <body>
+    <body>
+ @foreach (var title in ViewBag.Titles)
+        {
+            <h2>@title</h2>
+        }
+    <h1>Başlık: @ViewBag.primaryImage</h1>
+    <img src="@ViewBag.PrimaryImage" alt="Primary Image">
+</body>
 </body>
 </html>
-<div class="container">
+@*<div class="container">
 <table class="table table-bordered">
     <tr>
         <th>#</th>
@@ -36,4 +44,4 @@
             </tr>
         }
     </table>
-</div>
+</div>*@

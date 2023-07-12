@@ -3,19 +3,10 @@
     public class ApiNewsViewModel
     {
 
-        public class Rootobject
-        {
-            public Meta meta { get; set; }
-            public Data data { get; set; }
-        }
-
-        public class Meta
-        {
-            public int status_code { get; set; }
-            public string message { get; set; }
-            public string description { get; set; }
-            public string brand { get; set; }
-        }
+        //public class Rootobject
+        //{
+            //public Data data { get; set; }
+        //}
 
         public class Data
         {
@@ -32,7 +23,6 @@
         {
             public string ArticleId { get; set; }
             public string ArticleSourceId { get; set; }
-            public Articlesourceinfo[] ArticleSourceInfo { get; set; }
             public string ArticleSourceType { get; set; }
             public string ArticleType { get; set; }
             public bool CanUserWriteComments { get; set; }
@@ -72,15 +62,6 @@
             public string TitleShort { get; set; }
             public string Url { get; set; }
             public bool UsedMethod { get; set; }
-        }
-
-        public class Articlesourceinfo
-        {
-            public string Id { get; set; }
-            public string primaryImage { get; set; }
-            public string Source { get; set; }
-            public string SourceForUrl { get; set; }
-            public string Type { get; set; }
         }
 
     }
