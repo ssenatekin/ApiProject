@@ -1,0 +1,39 @@
+﻿@model List<ApiNewsViewModel.Response>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+</body>
+</html>
+<div class="container">
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>resim</th>
+        <th>başlık</th>
+        <th>başlık</th>
+        <th>x</th>
+        <th>x</th>
+        <th>x</th>
+    </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.primaryImage</td>
+                <td>@item.Title</td>
+                <td>@item.TitleShort</td>
+                <td>@item.OutputDate</td>
+                <td>@item.secondaryImage</td>
+                <td>@item.Spot</td>
+            </tr>
+        }
+    </table>
+</div>
