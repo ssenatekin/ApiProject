@@ -3,27 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiConsume", "ApiConsume", "{9B36EEC6-E58A-4255-82BB-F64F286D36EC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{71C2C9A4-7D69-4BAC-AB3C-FA134CC0ACB8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDoList", "ToDoList", "{A3C0D6E8-21B9-425C-A7E3-A463D9562B2A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsProject.WebApi", "ApiConsume\NewsProject.WebApi\NewsProject.WebApi.csproj", "{C8183D08-DA3E-4771-A858-D2D070D9CB0F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsProject.EntityLayer", "ApiConsume\NewsProject.EntityLayer\NewsProject.EntityLayer.csproj", "{B5B852FC-C09C-4334-9426-EB7146A4798B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsProject.DataAccessLayer", "ApiConsume\NewsProject.DataAccessLayer\NewsProject.DataAccessLayer.csproj", "{BADB6F33-9768-4AEF-9CB9-C2E04F0B9E1D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsProject.BusinessLayer", "ApiConsume\NewsProject.BusinessLayer\NewsProject.BusinessLayer.csproj", "{786BA838-2071-4CD0-8B68-75C1249FDBC5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsProject.DtoLayer", "ApiConsume\NewsProject.DtoLayer\NewsProject.DtoLayer.csproj", "{498DF57C-CABE-4DED-8803-ECA10F4830C2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsProject.WebUI", "Frontend\NewsProject.WebUI\NewsProject.WebUI.csproj", "{A8447735-B195-4237-97C5-0EA4025C6388}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{BE9E8E5C-08E4-4F34-A3B5-D33C93CD2BC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidApiConsume", "RapidApi\RapidApiConsume\RapidApiConsume.csproj", "{269848C9-AECE-4EE1-A9E6-9FAF35A4F27F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidApiConsume", "RapidApi\RapidApiConsume\RapidApiConsume.csproj", "{269848C9-AECE-4EE1-A9E6-9FAF35A4F27F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,30 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8183D08-DA3E-4771-A858-D2D070D9CB0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8183D08-DA3E-4771-A858-D2D070D9CB0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8183D08-DA3E-4771-A858-D2D070D9CB0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8183D08-DA3E-4771-A858-D2D070D9CB0F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5B852FC-C09C-4334-9426-EB7146A4798B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5B852FC-C09C-4334-9426-EB7146A4798B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5B852FC-C09C-4334-9426-EB7146A4798B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5B852FC-C09C-4334-9426-EB7146A4798B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BADB6F33-9768-4AEF-9CB9-C2E04F0B9E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BADB6F33-9768-4AEF-9CB9-C2E04F0B9E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BADB6F33-9768-4AEF-9CB9-C2E04F0B9E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BADB6F33-9768-4AEF-9CB9-C2E04F0B9E1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{786BA838-2071-4CD0-8B68-75C1249FDBC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{786BA838-2071-4CD0-8B68-75C1249FDBC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{786BA838-2071-4CD0-8B68-75C1249FDBC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{786BA838-2071-4CD0-8B68-75C1249FDBC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{498DF57C-CABE-4DED-8803-ECA10F4830C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{498DF57C-CABE-4DED-8803-ECA10F4830C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{498DF57C-CABE-4DED-8803-ECA10F4830C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{498DF57C-CABE-4DED-8803-ECA10F4830C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8447735-B195-4237-97C5-0EA4025C6388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8447735-B195-4237-97C5-0EA4025C6388}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8447735-B195-4237-97C5-0EA4025C6388}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8447735-B195-4237-97C5-0EA4025C6388}.Release|Any CPU.Build.0 = Release|Any CPU
 		{269848C9-AECE-4EE1-A9E6-9FAF35A4F27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{269848C9-AECE-4EE1-A9E6-9FAF35A4F27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{269848C9-AECE-4EE1-A9E6-9FAF35A4F27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -64,12 +24,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C8183D08-DA3E-4771-A858-D2D070D9CB0F} = {9B36EEC6-E58A-4255-82BB-F64F286D36EC}
-		{B5B852FC-C09C-4334-9426-EB7146A4798B} = {9B36EEC6-E58A-4255-82BB-F64F286D36EC}
-		{BADB6F33-9768-4AEF-9CB9-C2E04F0B9E1D} = {9B36EEC6-E58A-4255-82BB-F64F286D36EC}
-		{786BA838-2071-4CD0-8B68-75C1249FDBC5} = {9B36EEC6-E58A-4255-82BB-F64F286D36EC}
-		{498DF57C-CABE-4DED-8803-ECA10F4830C2} = {9B36EEC6-E58A-4255-82BB-F64F286D36EC}
-		{A8447735-B195-4237-97C5-0EA4025C6388} = {71C2C9A4-7D69-4BAC-AB3C-FA134CC0ACB8}
 		{269848C9-AECE-4EE1-A9E6-9FAF35A4F27F} = {BE9E8E5C-08E4-4F34-A3B5-D33C93CD2BC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

@@ -1,47 +1,88 @@
-﻿@model List<ApiNewsViewModel.Response>
+﻿@model List<ApiHaberViewModel>
 @{
     Layout = null;
 }
 
 <!DOCTYPE html>
-
 <html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <body>
- @foreach (var title in ViewBag.Titles)
-        {
-            <h2>@title</h2>
-        }
-    <h1>Başlık: @ViewBag.primaryImage</h1>
-    <img src="@ViewBag.PrimaryImage" alt="Primary Image">
-</body>
-</body>
-</html>
-@*<div class="container">
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>resim</th>
-        <th>başlık</th>
-        <th>başlık</th>
-        <th>x</th>
-        <th>x</th>
-        <th>x</th>
-    </tr>
-        @foreach(var item in Model)
-        {
-            <tr>
-                <td>@item.primaryImage</td>
-                <td>@item.Title</td>
-                <td>@item.TitleShort</td>
-                <td>@item.OutputDate</td>
-                <td>@item.secondaryImage</td>
-                <td>@item.Spot</td>
-            </tr>
-        }
-    </table>
-</div>*@
+    <h2 align="center" ><b>TURKUVAZ MEDYA</b></h2>
+    <div align="left" style="position:absolute; left:50px" >
+    @if (!string.IsNullOrEmpty(ViewBag.titleShort))
+    {
+                    <a href="@ViewBag.url"> <img width="500" height="400" src="@ViewBag.image" alt="Primary Image" /> </a>
+                    <h1 style="height:100px; width:700px"><a href="@ViewBag.url"> @ViewBag.titleShort</h1>
+    }
+    else
+    {
+                    <a href="@ViewBag.url"> <img src="@ViewBag.image" alt="Primary Image" /> </a>
+                    <h1 style="height:100px; width:700px"><a href="@ViewBag.url"></a> @ViewBag.title</h1>                
+    }
+    </div>
+    <div align="right" style="position:absolute; top:50px; right:100px">
+         <a href="@ViewBag.url1"> <img width="400" height="250" src="@ViewBag.sImage1" alt="Primary sImage" /> </a>
+         <br />
+         <br />
+         <a href="@ViewBag.url2"> <img width="400" height="250" src="@ViewBag.sImage2" alt="Primary sImage" /> </a>
+   </div>
+     <div style="position:absolute; top:600px; left:50px">
+         <div style="position:absolute;">
+             <a href="@ViewBag.url3"> <img width="250" height="250" src="@ViewBag.pImage" alt="Primary Image" /> </a>
+             <a href="@ViewBag.url3"><h2 style="height:100px; width:250px"> @ViewBag.tShort</h2></a>
+         </div>
+         <div style="position:absolute; left:300px">
+             <a href="@ViewBag.url4"> <img width="250" height="250" src="@ViewBag.pImage1" alt="Primary Image" /> </a>
+             <a href="@ViewBag.url4"> <h2 style="height:100px; width:250px">@ViewBag.tShort1</h2></a>
+         </div >
+         <div style="position:absolute; left:600px">
+             <a href="@ViewBag.url5"> <img width="250" height="250" src="@ViewBag.pImage2" alt="Primary Image" /> </a>
+             <a href="@ViewBag.url5"><h2 style="height:100px; width:250px"> @ViewBag.tShort2</h2></a>
+         </div>
+         <div style="position:absolute; left:900px">
+             <a href="@ViewBag.url6"> <img width="250" height="250" src="@ViewBag.pImage3" alt="Primary Image" /> </a>
+             <a href="@ViewBag.url6"> <h2 style="height:100px; width:250px"> @ViewBag.tShort3</h2></a>
+         </div>
+     </div>
+
+     <div style="position:absolute; top:1000px; left:50px">
+         <h3>@ViewBag.titled1</h3>
+         <h3>@ViewBag.titled2</h3>
+         <h3>@ViewBag.titled3</h3>
+     </div>
+     <div style="position:absolute; top:1150px; left:50px">
+         <p>@ViewBag.spot1 </p>
+         <p>@ViewBag.spot2 </p>
+         <p>@ViewBag.spot3 </p>
+     </div>
+
+     <<div style="position:absolute; top:1450px; left:50px">
+         <video width="700" height="350" controls poster="@ViewBag.videoImage">
+         <source src="@ViewBag.videoImage" type="video/mp4"/>
+         <source src="@ViewBag.player" type="video/ogg"> 
+         </video>
+    @if (!string.IsNullOrEmpty(ViewBag.tShortE8))
+    {
+        <h2> @ViewBag.tShortE8</h2>
+    }
+    else
+    {
+        <h2> @ViewBag.titleE8</h2>
+    }
+     <p >@ViewBag.spote9</p>
+
+         <h4 style="position:absolute; left:1200px;" >@ViewBag.date</h4>
+         <br />
+         <h4 style="position:absolute; left:1200px;" >@ViewBag.time</h4>
+     </div>
+ <div style="position:absolute; top:2000px;">
+     <a href="@ViewBag.urlf1" style="position:absolute; left:50px;"> <img width="250" height="250" src="@ViewBag.secImagef1" alt="Primary sImage" /> </a>
+     <a href="@ViewBag.urlf2" style="position:absolute; left:350px;"> <img width="250" height="250" src="@ViewBag.secImagef2" alt="Primary sImage" /> </a>
+     <a href="@ViewBag.urlf3" style="position:absolute; left:650px;"> <img width="250" height="250" src="@ViewBag.secImagef3" alt="Primary sImage" /> </a>
+     <a href="@ViewBag.urlf4" style="position:absolute; left:950px;"> <img width="250" height="250" src="@ViewBag.secImagef4" alt="Primary sImage" /> </a>
+ </div>
+ <div style="position:absolute; top:2300px;">
+     <a href="@ViewBag.urlf5" style="position:absolute; left:50px;"> <img width="250" height="250" src="@ViewBag.secImagef5" alt="Primary sImage" /> </a>
+     <a href="@ViewBag.urlf6" style="position:absolute; left:350px;"> <img width="250" height="250" src="@ViewBag.secImagef6" alt="Primary sImage" /> </a>
+     <a href="@ViewBag.urlf7" style="position:absolute; left:650px;"> <img width="250" height="250" src="@ViewBag.secImagef7" alt="Primary sImage" /> </a>
+     <a href="@ViewBag.urlf8" style="position:absolute; left:950px;"> <img width="250" height="250" src="@ViewBag.secImagef8" alt="Primary sImage" /> </a>
+</div>
+   </html>
